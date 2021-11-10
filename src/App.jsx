@@ -1,4 +1,3 @@
-import './App.css'
 
 // components
 import Header from "./components/Header"
@@ -20,12 +19,13 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <div className="main">
       <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/projects" element={<Projects URL={URL}/>}/>
           <Route exact path="/about" element={<About URL={URL}/>}/>
       </Routes>
-      <Footer/>
+      </div>
     </div>
   )
 }

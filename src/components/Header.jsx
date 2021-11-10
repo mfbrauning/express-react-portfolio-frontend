@@ -3,19 +3,11 @@ import { Link } from "react-router-dom"
 function Header(props) {
 
     // inline style for nav tag
-    const navStyle = {
-        display: "flex",
-        justifyContent: "space-around",
-        border: "3px solid black",
-        padding: "8px",
-        width: "90%",
-        margin: "auto"
-    }
+
 
     return (
     <header>
-        <h1>My Portfolio Page</h1>
-        <nav style={navStyle}>
+        <nav>
             <Link to="/">
                 <div>HOME</div>
             </Link>
